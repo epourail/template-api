@@ -1,4 +1,4 @@
-# Web service with PHP/Symfony 
+# API base-project with PHP/Symfony 
 [![Build Status](https://travis-ci.org/epourail/template-api-symfony.svg?branch=master)](https://travis-ci.org/epourail/template-api-symfony)
 [![codecov](https://codecov.io/gh/epourail/template-api-symfony/branch/master/graph/badge.svg)](https://codecov.io/gh/epourail/template-api-symfony)
 
