@@ -9,8 +9,11 @@ Features
   - [x] api-php : PHP 7.3 / Symfony 5.X
   - [x] api-nginx : NGINX 1.17
   - [x] api-tests : CodeCeption 4.0
+- [x] Docker Compose Integration
+- [x] Orchestration :
+  - [x] Kubernetes
 - [x] Makefile
-- [x] Tests : unitary, api, acceptance
+- [x] Tests : unitary, api, acceptance (codeception)
 - [x] Continuous Integration : Travis
 - [x] Code Coverage Report : Codecov
 - [x] Code quality
