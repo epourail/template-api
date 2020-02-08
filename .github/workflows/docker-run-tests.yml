@@ -1,0 +1,29 @@
+name: Run the Tests (unit, api)
+
+on:
+  pull_request:
+    branches:
+      - master
+      - feature/*
+      - fix/*
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+        
+      - name: Install packages
+        run: composer install --no-interaction
+      - name: Run phpcs
+        run: vendor/bin/phpcs
+      - name: Run phpstan
+        run: vendor/bin/phpstan analyse src --ansi
+      - name: Run tests with code coverage
+        run: vendor/bin/codecept run unit,api --coverage --coverage-xml
+      - name: Publish code coverage
+        run: curl -s https://codecov.io/bash -f tests/_output/coverage.xml
+        shell: bash
+        env:
+          CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
