@@ -2,9 +2,6 @@ version: '3.7'
 
 services:
   api-php:
-    build:
-      args: 
-        ARG_APP_ENV: dev  
     env_file:
       - .env.dev
     volumes:

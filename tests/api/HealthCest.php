@@ -16,6 +16,6 @@ class HealthCest
         $I->sendGET('/health');
         $I->seeResponseCodeIs(HttpCode::OK);
         $I->seeHttpHeaderOnce('Content-Type', 'text/plain');
-        $I->seeResponseContains('healthy');
+        $I->seeResponseEquals('healthy');
     }
 }

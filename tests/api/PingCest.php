@@ -16,6 +16,6 @@ class PingCest
         $I->sendGET('/ping');
         $I->seeResponseCodeIs(HttpCode::OK);
         $I->seeHttpHeaderOnce('Content-Type', 'text/plain');
-        $I->seeResponseContains('pong');
+        $I->seeResponseEquals('pong');
     }
 }
