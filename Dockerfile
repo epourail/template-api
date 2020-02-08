@@ -76,21 +76,17 @@ ARG ARG_APP_ENV=prod
 ENV APP_ENV=$ARG_APP_ENV
 
 # prevent the reinstallation of vendors at every changes in the source code
-COPY composer.json composer.lock symfony.lock ./
+COPY .env composer.json composer.lock symfony.lock ./
 RUN set -eux; \
-	composer install --prefer-dist --no-dev --no-scripts --no-progress --no-suggest; \
+	composer install --prefer-dist --no-dev --no-autoloader --no-scripts --no-progress --no-suggest; \
 	composer clear-cache
 
-# do not use .env files in production
-COPY .env ./
-RUN composer dump-env ${APP_ENV}; \
-	rm .env
-
-# copy only specifically what we need
+# Copy only specifically what we need
 COPY bin bin/
 COPY config config/
 COPY public public/
 COPY src src/
+COPY templates templates/
 
 RUN set -eux; \
 	mkdir -p var/cache var/log; \
