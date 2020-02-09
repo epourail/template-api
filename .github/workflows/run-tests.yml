@@ -23,6 +23,7 @@ jobs:
       - name: Run tests with code coverage
         run: vendor/bin/codecept run unit,api --coverage --coverage-xml
       - name: Publish code coverage
+        if: github.event_name == 'pull_request'
         run: bash <(curl -s https://codecov.io/bash) -f tests/_output/coverage.xml
         env:
           CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
