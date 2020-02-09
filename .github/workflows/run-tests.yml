@@ -31,6 +31,6 @@ jobs:
       - name: Test printing (ls -al tests/_output/coverage.xml)
         run: ls -al tests/_output/coverage.xml
       - name: Publish code coverage
-        run: bash<(curl -s https://codecov.io/bash) -f tests/_output/coverage.xml
+        run: bash <(curl -s https://codecov.io/bash) -f tests/_output/coverage.xml
         env:
           CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
