@@ -1,4 +1,4 @@
-name: Docker Build (and Run acceptance tests)
+name: Docker Build (and Run the acceptance tests)
 
 on:
   pull_request:
