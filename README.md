@@ -12,6 +12,7 @@ Features
 - [x] Makefile
 - [x] Tests : unitary, api, acceptance
 - [x] Continuous Integration : Travis
+- [x] Continuous Integration : GitHub actions
 - [x] Code Coverage Report : Codecov
 - [x] Code quality
   - [x] PHP Code Sniffer (phpcs)

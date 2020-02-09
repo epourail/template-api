@@ -1,4 +1,4 @@
-name: Run the Tests (unit, api)
+name: Run the integration tests
 
 on:
   pull_request:
@@ -20,7 +20,7 @@ jobs:
         run: vendor/bin/phpcs
       - name: Run phpstan
         run: vendor/bin/phpstan analyse src --ansi
-      - name: Run tests with code coverage
+      - name: Run (unit and api) tests with code coverage
         run: vendor/bin/codecept run unit,api --coverage --coverage-xml
       - name: Publish code coverage
         if: github.event_name == 'pull_request'
