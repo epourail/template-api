@@ -16,8 +16,10 @@ jobs:
         
       - name: Via the Makefile, build the Docker image
         run: make build
+        
       - name: Via the Makefile, run the acceptance tests
         run: make run-tests-acceptance
+        
       - name: Via the Makefile, stop the started contaiers
         if: always()
         run: make stop
