@@ -18,8 +18,8 @@ jobs:
         run: composer install --no-interaction 
       - name: Run phpcs
         run: vendor/bin/phpcs
-#      - name: Run phpstan
-#        run: vendor/bin/phpstan analyse src --ansi
+      - name: Run phpstan
+        run: vendor/bin/phpstan analyse src --ansi
 #      - name: Run tests with code coverage
 #        run: vendor/bin/codecept run unit,api --coverage --coverage-xml
 #      - name: Publish code coverage
