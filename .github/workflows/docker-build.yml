@@ -1,6 +1,9 @@
 name: Docker build (and Run the acceptance tests)
 
 on:
+  push:
+    branches: 
+      - master
   pull_request:
     branches: 
       - master
