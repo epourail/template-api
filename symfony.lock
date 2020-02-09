@@ -83,11 +83,14 @@
     "guzzlehttp/psr7": {
         "version": "1.6.1"
     },
+    "justinrainbow/json-schema": {
+        "version": "5.2.9"
+    },
+    "monolog/monolog": {
+        "version": "2.0.2"
+    },
     "myclabs/deep-copy": {
         "version": "1.9.4"
-    },
-    "nikic/php-parser": {
-        "version": "v4.3.0"
     },
     "phar-io/manifest": {
         "version": "1.0.3"
@@ -313,6 +316,23 @@
     },
     "symfony/mime": {
         "version": "v5.0.2"
+    },
+    "symfony/monolog-bridge": {
+        "version": "v5.0.4"
+    },
+    "symfony/monolog-bundle": {
+        "version": "3.3",
+        "recipe": {
+            "repo": "github.com/symfony/recipes",
+            "branch": "master",
+            "version": "3.3",
+            "ref": "877bdb4223245783d00ed1f7429aa7ebc606d914"
+        },
+        "files": [
+            "config/packages/dev/monolog.yaml",
+            "config/packages/prod/monolog.yaml",
+            "config/packages/test/monolog.yaml"
+        ]
     },
     "symfony/polyfill-intl-idn": {
         "version": "v1.13.1"
