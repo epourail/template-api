@@ -1,6 +1,10 @@
 name: Docker Build
 
-on: 
+on:
+  # temporary to disable the job execution 
+  push:
+    branches-ignore:
+      - 'feature/*'
   pull_request:
     branches: 
       - master

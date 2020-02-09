@@ -74,6 +74,23 @@ X-Robots-Tag: noindex
 pong
 ```
 
+Readiness probe
+
+```bash
+➜ curl -i http://127.0.0.1:8881/health
+HTTP/1.1 200 OK
+Server: nginx/1.17.6
+Content-Type: text/plain; charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+X-Powered-By: PHP/7.3.13
+Cache-Control: no-cache, private
+Date: Thu, 02 Jan 2020 12:52:13 GMT
+X-Robots-Tag: noindex
+
+healthy
+```
+
 ## Test
 
 ```bash
