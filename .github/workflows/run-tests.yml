@@ -22,14 +22,6 @@ jobs:
         run: vendor/bin/phpstan analyse src --ansi
       - name: Run tests with code coverage
         run: vendor/bin/codecept run unit,api --coverage --coverage-xml
-      - name: Test printing (ls -al)
-        run: ls -al
-      - name: Test printing (ls -al tests/)
-        run: ls -al tests/
-      - name: Test printing (ls -al tests/_output/)
-        run: ls -al tests/_output/
-      - name: Test printing (ls -al tests/_output/coverage.xml)
-        run: ls -al tests/_output/coverage.xml
       - name: Publish code coverage
         run: bash <(curl -s https://codecov.io/bash) -f tests/_output/coverage.xml
         env:
