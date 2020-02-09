@@ -20,8 +20,8 @@ jobs:
         run: vendor/bin/phpcs
       - name: Run phpstan
         run: vendor/bin/phpstan analyse src --ansi
-#      - name: Run tests with code coverage
-#        run: vendor/bin/codecept run unit,api --coverage --coverage-xml
+      - name: Run tests with code coverage
+        run: vendor/bin/codecept run unit,api --coverage --coverage-xml
 #      - name: Publish code coverage
 #        run: curl -s https://codecov.io/bash -f tests/_output/coverage.xml
 #        shell: bash
