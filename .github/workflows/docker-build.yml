@@ -5,11 +5,11 @@ on:
   push:
     branches-ignore:
       - 'feature/*'
-  pull_request:
-    branches: 
-      - master
-      - feature/*
-      - fix/*
+#  pull_request:
+#    branches: 
+#      - master
+#      - feature/*
+#      - fix/*
 
 jobs:
   build:
