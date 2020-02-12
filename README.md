@@ -1,4 +1,4 @@
-# Web service with PHP/Symfony 
+# API base-project with PHP/Symfony 
 [![Build Status](https://travis-ci.org/epourail/template-api-symfony.svg?branch=master)](https://travis-ci.org/epourail/template-api-symfony)
 [![codecov](https://codecov.io/gh/epourail/template-api-symfony/branch/master/graph/badge.svg)](https://codecov.io/gh/epourail/template-api-symfony)
 
@@ -9,8 +9,11 @@ Features
   - [x] api-php : PHP 7.3 / Symfony 5.X
   - [x] api-nginx : NGINX 1.17
   - [x] api-tests : CodeCeption 4.0
+- [x] Docker Compose Integration
+- [x] Orchestration :
+  - [x] Kubernetes
 - [x] Makefile
-- [x] Tests : unitary, api, acceptance
+- [x] Tests : unitary, api, acceptance (codeception)
 - [x] Continuous Integration : Travis
 - [x] Continuous Integration : GitHub actions
 - [x] Code Coverage Report : Codecov

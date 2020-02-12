@@ -1,0 +1,17 @@
+apiVersion: v1
+appVersion: "1.0"
+description: A Helm base-chart for Kubernetes to deploy the api
+name: template-api
+version: 0.1.0
+keywords:
+  - api
+  - php
+  - symfony
+  - ping
+  - template
+  - rest
+  - test
+sources:
+  - https://github.com/epourail/template-api-symfony
+maintainers:
+  - name: Julien Verger
