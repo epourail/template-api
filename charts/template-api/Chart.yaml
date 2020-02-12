@@ -5,6 +5,8 @@ name: template-api
 version: 0.1.0
 keywords:
   - api
+  - php
+  - symfony
   - ping
   - template
   - rest
